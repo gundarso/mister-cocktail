@@ -57,3 +57,5 @@ group :production do
 end
 
 gem 'rspec-rails', group: [ :test ]
+
+gem 'figaro'
