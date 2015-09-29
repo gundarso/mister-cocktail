@@ -2,7 +2,8 @@
 
 <ul>
   <% @cocktails.each do |cocktail| %>
-  <li><%= cocktail.name %>  <%= link_to 'Show details', cocktail_path(cocktail) %></li>
+  <li><%= cocktail.name %> <%= image_tag cocktail.picture.url(:medium) %>
+ <%= link_to 'Show details', cocktail_path(cocktail) %></li>
   <% end %>
 </ul>
 

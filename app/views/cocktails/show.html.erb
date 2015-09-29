@@ -1,6 +1,7 @@
 <h1>Cocktails#show</h1>
 
 <strong><%= @cocktail.name %></strong>
+<%= image_tag @cocktail.picture.url(:medium) %>
 
 <ul>
 <% @cocktail.doses.each do |dose| %>
